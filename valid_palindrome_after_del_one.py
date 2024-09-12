@@ -16,7 +16,7 @@ def brute(s):
         
     return False 
 
-def isPalindromeRange(s, start, end):
+def is_palindrome(s, start, end):
     """
     Helper function to check if the substring s[start:end] is a palindrome.
     """
@@ -27,7 +27,7 @@ def isPalindromeRange(s, start, end):
         end -= 1
     return True
 
-def validPalindrome(s):
+def valid_palindrome(s):
     """
     Time: O(n), where n is the length of the input string.
     Space: O(1), since no additional space is used except for a few pointers.
@@ -38,7 +38,7 @@ def validPalindrome(s):
     while start < end:
         if s[start] != s[end]:
             # Check if skipping either s[start] or s[end] results in a palindrome
-            return isPalindromeRange(s, start + 1, end) or isPalindromeRange(s, start, end - 1)
+            return is_palindrome(s, start + 1, end) or is_palindrome(s, start, end - 1)
         start += 1
         end -= 1
     
@@ -47,9 +47,9 @@ def validPalindrome(s):
 if __name__=='__main__':
 
     s = "abca" # true
-    result = validPalindrome(s)
+    result = valid_palindrome(s)
     print(result)
 
     s = "abc" # false
-    result = validPalindrome(s)
+    result = valid_palindrome(s)
     print(result)

@@ -9,7 +9,7 @@ def brute(s):
     if s == s[::-1]: return True
     else: return False
 
-def isPalindrome(s):
+def is_palindrome(s):
     """
     A phrase is a palindrome if, after converting all uppercase letters into 
     lowercase letters and removing all non-alphanumeric characters, it reads 
@@ -46,6 +46,6 @@ if __name__=='__main__':
 
     result = brute(s)
 
-    result = isPalindrome(s) # Output: true
+    result = is_palindrome(s) # Output: true
     print(result)
 

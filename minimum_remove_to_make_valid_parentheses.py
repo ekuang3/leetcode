@@ -1,4 +1,4 @@
-def minRemoveToMakeValid(s: str) -> str:
+def min_remove_to_make_valid(s):
     """Time and space complexity is O(n) where n is length of string"""
     # Convert the string into a list so that we can mutate it
     s = list(s)
@@ -26,5 +26,5 @@ def minRemoveToMakeValid(s: str) -> str:
 # Example usage
 s = "lee(t(c)o)de)" # Output: "lee(t(c)o)de"
 s = "))((" # Output: ""
-result = minRemoveToMakeValid(s)
+result = min_remove_to_make_valid(s)
 print(result)

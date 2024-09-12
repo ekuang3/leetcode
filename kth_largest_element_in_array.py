@@ -7,7 +7,7 @@ def brute(nums, k):
     return nums[k-1]
 
 import heapq
-def findKthLargest(nums, k):
+def find_kth_largest(nums, k):
     """
     Time: O(nlogk), where n is total elements in nums
     Space: O(k), where heap stores only k elements
@@ -33,5 +33,5 @@ if __name__=='__main__':
     result = brute(nums, k)
     print(result)
 
-    result = findKthLargest(nums, k)
+    result = find_kth_largest(nums, k)
     print(result)

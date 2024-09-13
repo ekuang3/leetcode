@@ -23,8 +23,9 @@ def min_remove_to_make_valid(s):
     # Rebuild the string and return the result
     return ''.join(s)
 
-# Example usage
-s = "lee(t(c)o)de)" # Output: "lee(t(c)o)de"
-s = "))((" # Output: ""
-result = min_remove_to_make_valid(s)
-print(result)
+if __name__=='__main__':
+
+    s = "lee(t(c)o)de)" # Output: "lee(t(c)o)de"
+    s = "))((" # Output: ""
+    result = min_remove_to_make_valid(s)
+    print(result)

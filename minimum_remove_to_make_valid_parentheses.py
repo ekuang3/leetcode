@@ -27,5 +27,6 @@ if __name__=='__main__':
 
     s = "lee(t(c)o)de)" # Output: "lee(t(c)o)de"
     s = "))((" # Output: ""
+    
     result = min_remove_to_make_valid(s)
     print(result)

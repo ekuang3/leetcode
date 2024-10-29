@@ -29,5 +29,6 @@ if __name__=='__main__':
 
     nums = [1,1,1,2,2,3]
     k = 2
-    result = top_k_frequent(nums, k)
+
+    result = top_k_frequent(nums, k) # [1,2]
     print(result)

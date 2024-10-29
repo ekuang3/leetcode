@@ -11,22 +11,37 @@ def merge_sorted_arrays(arr1, arr2):
 
     Space: O(m+n), which is the size of the merged array
     """
+
     merged_array = []
-    i, j = 0, 0
+    i = 0
+    j = 0
+  
+    # Traverse both lists
+    # If the current element of first list
+    # is smaller than the current element
+    # of the second list, then store the
+    # first list's value and increment the index 
 
-    # Traverse both arrays
-    while i < len(arr1) and j < len(arr2):
-        if arr1[i] < arr2[j]:
+    while i < len(arr1) and j < len(arr2): 
+      
+        if arr1[i] < arr2[j]: 
             merged_array.append(arr1[i])
-            i += 1
-        else:
+            i = i + 1
+        else: 
             merged_array.append(arr2[j])
-            j += 1
+            j = j + 1
+      
+  
+    # Store remaining elements of the first list
+    while i < len(arr1): 
+        merged_array.append(arr1[i])
+        i = i + 1
+  
+    # Store remaining elements of the second list
+    while j < len(arr2): 
+        merged_array.append(arr2[j])
+        j = j + 1
 
-    # Append remaining elements
-    merged_array += arr1[i:]
-    merged_array += arr2[j:]
-        
     return merged_array
 
 if __name__=='__main__':

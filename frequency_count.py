@@ -19,5 +19,20 @@ def frequency_count(nums):
 
 if __name__=='__main__':
     
-    nums = [1, 2, 2, 3, 1, 1, 4]
-    print(frequency_count(nums))
+    # Example 1
+    nums = [1, 2, 2, 3, 1, 1, 4] 
+    res = frequency_count(nums) # {1: 3, 2: 2, 3: 1, 4: 1}
+    print(res)
+
+    # Example 2
+    sentence = "I have a nice car with a nice tires"
+    words = sentence.split(' ')
+    res = frequency_count(words)
+    print(res)
+
+    # ...change frequency to percentage
+    size = len(words)
+    freq_dict = {}
+    for key,value in res.items():
+        freq_dict[key] = round(value / size, 2)
+    print(freq_dict)

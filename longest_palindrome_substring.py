@@ -34,10 +34,10 @@ def longest_palindrome_substring(s):
 
 if __name__=='__main__':
 
-    s = "babad" # Output: "bab"
-    result = longest_palindrome_substring(s)
+    s = "babad" 
+    result = longest_palindrome_substring(s) # bab
     print(result)
 
     s = "cbbd"
-    result = longest_palindrome_substring(s)
+    result = longest_palindrome_substring(s) # bb
     print(result)

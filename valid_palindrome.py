@@ -43,6 +43,6 @@ def is_palindrome(s):
 if __name__=='__main__':
 
     s = "A man, a plan, a canal: Panama"
-    result = is_palindrome(s) # Output: true
+    result = is_palindrome(s) # true
     print(result)
 

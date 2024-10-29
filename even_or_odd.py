@@ -9,14 +9,14 @@ def is_even_or_odd(n):
     
 if __name__=='__main__':
 
-    n = 0
+    n = 0 # even
     print(is_even_or_odd(n))
 
-    n = 1
+    n = 1 # odd
     print(is_even_or_odd(n))
 
-    n = 2
+    n = 2 # even
     print(is_even_or_odd(n))
 
-    n = 1/2
+    n = 1/2 # neither
     print(is_even_or_odd(n))

@@ -35,7 +35,7 @@ def merge(nums1, m, nums2, n):
     # If there are remaining elements in nums2, copy them
     nums1[:p2 + 1] = nums2[:p2 + 1]
 
-    print(nums1)
+    return nums1
 
 if __name__=='__main__':
 
@@ -43,4 +43,6 @@ if __name__=='__main__':
     m = 3
     nums2 = [2,5,6]
     n = 3 
-    result = merge(nums1, m, nums2, n) # Output: [1,2,2,3,5,6]
+
+    result = merge(nums1, m, nums2, n) # [1,2,2,3,5,6]
+    print(result)

@@ -28,10 +28,7 @@ def find_kth_largest(nums, k):
 
 if __name__=='__main__':
 
-    nums = [3,2,1,5,6,4]
-    k = 3
-    result = brute(nums, k)
-    print(result)
+    nums, k = [3,2,1,5,6,4], 3
 
-    result = find_kth_largest(nums, k)
+    result = find_kth_largest(nums, k) # 4
     print(result)

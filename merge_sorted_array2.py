@@ -1,4 +1,4 @@
-def brute():
+def brute(arr1, arr2):
     """
     Time: O((len(arr1) + len(arr2)) * log(len(arr1) + len(arr2)))
     Space: O(m+n) which is the size of the merged array 

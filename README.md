@@ -16,7 +16,7 @@ Real World:
   * tradeoffs
 
 Always answer:
-What structure do you expect?
-Time and space complexities
-Edge cases (negative, zero, positive numbers)
-Debug
+* What structure do you expect?
+* Time and space complexities
+* Edge cases (negative, zero, positive numbers)
+* Debug

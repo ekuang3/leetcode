@@ -15,3 +15,7 @@ for key, value in my_dict.items():
     # Key: a, Value: 1
     # Key: b, Value: 2
     # Key: c, Value: 3
+
+# Add new items to dictionary
+my_dict['d'] = 4
+print(my_dict)
